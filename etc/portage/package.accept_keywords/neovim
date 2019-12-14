@@ -1,0 +1,4 @@
+app-editors/neovim::my ~amd64
+=dev-libs/libtermkey-0.22::gentoo ~amd64
+>=dev-libs/unibilium-2.0.0::gentoo ~amd64
+=dev-libs/msgpack-1.1.0::gentoo **

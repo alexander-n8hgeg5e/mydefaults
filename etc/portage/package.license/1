@@ -1,0 +1,11 @@
+
+# some codec
+>=media-libs/fdk-aac-0.1.5 FraunhoferFDK
+
+app-vim/* vim.org
+
+app-text/info2html freedist
+
+sys-kernel/linux-firmware no-source-code
+
+sys-kernel/linux-firmware linux-fw-redistributable

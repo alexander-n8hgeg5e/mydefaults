@@ -1,0 +1,5 @@
+=dev-python/prompt_toolkit-2.0.7::gentoo  ~amd64
+#(dependency required by "dev-python/ipython-7.2.0::my" [ebuild])
+#(dependency required by "@my_advanced" [set])
+#(dependency required by "@selected" [set])
+#(dependency required by "@world" [argument])
