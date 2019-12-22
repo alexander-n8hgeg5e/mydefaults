@@ -7,6 +7,8 @@
             set -x co "$HOME"/.config
             set -x cf "$HOME"/.config/fish/config.fish
             set -x c  "$HOME"/code
+            set -x cp  "$HOME"/code/python_code
+            set -x cpl  "$HOME"/code/pylib/pylib
             set -x cv  "$HOME"/.config/nvim
             set -x ecf "$EPREFIX"/etc/fish/config.fish
             set -x ep "$EPREFIX"/etc/portage
