@@ -13,7 +13,7 @@ complete -c gl -w git
 
 abbr -a -g g git status -s 
 abbr -a -g g. git add  . 
-abbr -a -g g.c g.c commit
+abbr -a -g g.c g.c commit -m\'\*
 abbr -a -g ga git add
 abbr -a -g gb gb branch
 abbr -a -g gbr git branch -m  
@@ -28,7 +28,8 @@ abbr -a -g gdc git diff --cached
 abbr -a -g gdcs git diff --cached --stat 
 abbr -a -g gds git diff --stat 
 abbr -a -g gh git log -1 --format="%H" 
-abbr -a -g gic git commit
+abbr -a -g gic git commit -m\'\*
+abbr -a -g gcm git commit -m\'\*
 abbr -a -g gpc git commit -p 
 abbr -a -g gprh gprh push
 abbr -a -g gsd git diff --submodule=diff 
