@@ -1,3 +1,10 @@
-=dev-python/pypeg2-2.15.2::gentoo ~amd64
-=dev-python/PyQt5-sip-4.19.17::gentoo ~amd64
-=dev-python/sip-4.19.17::gentoo ~amd64
+# DO NOT EDIT
+# CONFIG-PROTECT DISABLED!
+# INSTALLED BY: mydefaults
+# DO NOT EDIT
+=www-client/qutebrowser-9999::my
+=dev-python/pypeg2-2.15*::gentoo
+=dev-python/PyQt5-sip-4.19*::gentoo
+=dev-python/sip-4.19*::gentoo
+=dev-python/lxml-4.4*::gentoo
+~dev-python/cython-0.29.14::gentoo
