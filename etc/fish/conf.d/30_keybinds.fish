@@ -65,6 +65,6 @@ bind -s \cl forward-word
 bind -s \cj backward-word
 bind -s \cw backward-kill-word
 bind -s \ca backward-kill-path-component
-bind -s -k up up
-bind -s -k down down
+bind -s -k up up-line
+bind -s -k down down-line
 bind -s -k btab complete-and-search
