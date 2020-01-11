@@ -27,8 +27,9 @@ src_prepare(){
 
 src_install(){
 # make.default
-dodir "/usr/share/${PN}"
-insinto "/usr/share/${PN}"
+etc_portage_profile_dir="etc/portage/profile"
+dodir "${etc_portage_profile_dir}"
+insinto "${etc_portage_profile_dir}"
 doins make.default
 
 # locale
