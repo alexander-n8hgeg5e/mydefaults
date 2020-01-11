@@ -1,1 +1,2 @@
-resolvconf.conf
+/resolvconf.conf
+/portage/gpg/*

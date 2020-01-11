@@ -30,7 +30,7 @@ src_install(){
 etc_portage_profile_dir="etc/portage/profile"
 dodir "${etc_portage_profile_dir}"
 insinto "${etc_portage_profile_dir}"
-doins make.default
+doins make.defaults
 
 # locale
 dodir "etc"
