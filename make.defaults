@@ -65,6 +65,10 @@ USE="${USE} tcpd pulseaudio opengl X bluetooth truetype jpeg tiff ogg -nls -java
 PYTHON_TARGETS="python2_7 python3_6 python3_7"
 RUBY_TARGETS="ruby24"
 
+USE_EXPAND="${USE_EXPAND} TFTPD_FCAP_USERS"
+USE_EXPAND_IMPLICIT="${USE_EXPAND_IMPLICIT} TFTPD_FCAP_USERS"
+USE_EXPAND_VALUES_TFTPD_FCAP_USERS="dusteater skyscraper"
+
 #L10N="en"
 #LINGUAS="en"
 
