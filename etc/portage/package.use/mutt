@@ -1,1 +1,3 @@
+# DO NOT EDIT IN "/etc" !
+# INSTEAD EDIT in "code/mydefaults" !
 mail-client/mutt -lmdb -qdbm -berkdb -hcache -imap -gdbm -nls

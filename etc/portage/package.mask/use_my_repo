@@ -1,2 +1,4 @@
+# DO NOT EDIT IN "/etc" !
+# INSTEAD EDIT in "code/mydefaults" !
 =app-editors/neovim-9999:0/0::gentoo
 dev-python/ipython::gentoo

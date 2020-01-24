@@ -1,3 +1,5 @@
+# DO NOT EDIT IN "/etc" !
+# INSTEAD EDIT in "code/mydefaults" !
 dev-qt/qtwebkit
 app-vim/gtk-syntax
 dev-embedded/crosstool-NG-xtensa::my

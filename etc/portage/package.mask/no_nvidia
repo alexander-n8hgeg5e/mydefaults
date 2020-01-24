@@ -1,2 +1,4 @@
+# DO NOT EDIT IN "/etc" !
+# INSTEAD EDIT in "code/mydefaults" !
 >=x11-drivers/nvidia-drivers-341
 =x11-drivers/nvidia-drivers-340.93-r1

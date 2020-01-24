@@ -1,2 +1,4 @@
+# DO NOT EDIT IN "/etc" !
+# INSTEAD EDIT in "code/mydefaults" !
 =app-shells/fish-3* ~amd64
 

@@ -1,1 +1,3 @@
+# DO NOT EDIT IN "/etc" !
+# INSTEAD EDIT in "code/mydefaults" !
 dev-python/neovim-python-client ~amd64

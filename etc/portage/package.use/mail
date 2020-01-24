@@ -1,3 +1,5 @@
+# DO NOT EDIT IN "/etc" !
+# INSTEAD EDIT in "code/mydefaults" !
 # this line of useflags worked to send kit email
 mail-mta/msmtp -doc -gnome-keyring -gnutls -libressl idn mta sasl ssl vim-syntax
 mail-client/mutt -lmdb -qdbm -berkdb -hcache -imap -gdbm -nls
