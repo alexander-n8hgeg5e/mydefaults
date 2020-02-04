@@ -69,6 +69,7 @@
     reflogExpire = never
 	reflogExpireUnreachable = never
     auto = 0
+    packRefs = false
 [transfer]
 	fsckobjects = false
 	unpacklimit = 500m
