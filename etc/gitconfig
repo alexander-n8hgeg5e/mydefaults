@@ -65,6 +65,14 @@
 [color]
 	interactive = true
 	pager = true
+
+[color "branch"]
+        remote = cyan
+        current = red
+
+[color "status"]
+        remoteBranch = cyan
+
 [gc]
     reflogExpire = never
 	reflogExpireUnreachable = never
