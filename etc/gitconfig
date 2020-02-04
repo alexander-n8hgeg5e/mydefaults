@@ -78,6 +78,13 @@
 	reflogExpireUnreachable = never
     auto = 0
     packRefs = false
+    rerereResolved = 1000d
+    rerereUnresolved = 250d
+
+[rerere]
+    autoUpdate = true
+    enabled = true
+
 [transfer]
 	fsckobjects = false
 	unpacklimit = 500m
