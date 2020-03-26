@@ -9,17 +9,9 @@ end
 function update_paenv
     set -l local_socket $PULSEAUDIO_REMOTE_SOCKET_PREFIX"@tmrl"
     if patmrl_is_ssh_alive
-        set -ug PULSE_SERVER
-        set -ul PULSE_SERVER
-        set -el PULSE_SERVER
-        set -eg PULSE_SERVER
-        set -Ux PULSE_SERVER unix:$local_socket
+        set -U  PULSE_SERVER unix:$local_socket
     else
-        set -ug PULSE_SERVER
-        set -ul PULSE_SERVER
-        set -el PULSE_SERVER
-        set -eg PULSE_SERVER
-        set -Ux PULSE_SERVER $DEFAULT_PULSE_SERVER
+        set -eU PULSE_SERVER
     end 
 end
 

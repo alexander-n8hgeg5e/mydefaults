@@ -37,13 +37,19 @@
             set -x  SUDO_EDITOR "$EPREFIX"/usr/bin/nvim
             set -q  BROWSER ; or set -x BROWSER w3m
             set -x  sets "$HOME"/code/portage/sets
+
+            # pulseaudio
             set -x  PULSEAUDIO_REMOTE_SOCKET_PREFIX  /tmp/pulseaudio
-            set -ug PULSE_SERVER
-            set -ul PULSE_SERVER
-            set -el PULSE_SERVER
-            set -eg PULSE_SERVER
-            test -f "$EPREFIX"/etc/default/pulse_server; and set -Ux PULSE_SERVER (cat "$EPREFIX"/etc/default/pulse_server)
-            test -f "$EPREFIX"/etc/default/pulse_server; and set -x  DEFAULT_PULSE_SERVER (cat "$EPREFIX"/etc/default/pulse_server)
+
+            if not set -q DEFAULT_PULSE_SERVER #or test $DEFAULT_PULSE_SERVER = "";
+                test -f "$EPREFIX"/etc/default/pulse_server
+                and set -x DEFAULT_PULSE_SERVER (cat "$EPREFIX"/etc/default/pulse_server)
+            end
+
+            if not set -q PULSE_SERVER #or test $PULSE_SERVER = "";
+                and set -x PULSE_SERVER "$DEFAULT_PULSE_SERVER"
+            end
+            
             set -g  fish_key_bindings fish_default_key_bindings
             set -x  NMON Ukt3nv-.
             set -x  MANPAGER w3m
