@@ -1,4 +1,4 @@
 # DO NOT EDIT IN "/etc" !
-# INSTEAD EDIT in "code/mydefaults" !
+# INSTEAD EDIT in "/var/src/mydefaults/etc/portage/package.accept_keywords/fish" !
 =app-shells/fish-3* ~amd64
 

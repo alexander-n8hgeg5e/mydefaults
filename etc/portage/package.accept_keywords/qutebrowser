@@ -1,5 +1,5 @@
 # DO NOT EDIT IN "/etc" !
-# INSTEAD EDIT in "code/mydefaults" !
+# INSTEAD EDIT in "/var/src/mydefaults/etc/portage/package.accept_keywords/qutebrowser" !
 # DO NOT EDIT
 # CONFIG-PROTECT DISABLED!
 # INSTALLED BY: mydefaults
