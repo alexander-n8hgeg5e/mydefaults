@@ -53,7 +53,9 @@ bind -s -k end end-of-line
 bind -s \ca beginning-of-line
 bind -s \ce end-of-line
 bind -s \cp up-or-search
+bind -s -k up up-or-search
 bind -s \cn down-or-search
+bind -s -k down-or-search
 bind -s \ce upcase-word
 bind -s \e\b backward-kill-word
 bind -s \eb backward-word
@@ -65,6 +67,6 @@ bind -s \cl forward-word
 bind -s \cj backward-word
 bind -s \cw backward-kill-word
 bind -s \ca backward-kill-path-component
-bind -s -k up up-line
-bind -s -k down down-line
+#bind -s -k up up-line
+#bind -s -k down down-line
 bind -s -k btab complete-and-search
