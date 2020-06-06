@@ -2,7 +2,7 @@
         email = alexander.w.email@gmail.com
         name = alexander-n8hgeg5e
 [core]
-	    editor = "read; echo"
+	    editor = "e -w"
         compression = 0
         looseCompression = 0
         quotepath = off
