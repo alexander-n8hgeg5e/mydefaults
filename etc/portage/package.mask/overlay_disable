@@ -3,6 +3,6 @@
 */*::sage-on-gentoo
 */*::fordfrog
 */*::java
-*/*::qt
+#*/*::qt
 */*::sage-on-gentoo
 */*::science
