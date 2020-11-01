@@ -74,7 +74,7 @@ USE_EXPAND_VALUES_TFTPD_FCAP_USERS="dusteater skyscraper ftpscan"
 #LINGUAS="en"
 
 ## some vars
-CODEDIR="${EROOT}code"
+CODEDIR="${EROOT}var/src"
 MYGITHUB_URIBASE="https://github.com/alexander-n8hgeg5e/"
 
 ## portage config
