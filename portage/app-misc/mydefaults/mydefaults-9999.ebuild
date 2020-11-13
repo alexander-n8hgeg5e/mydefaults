@@ -26,11 +26,11 @@ src_prepare(){
 }
 
 src_install(){
-# make.default
-etc_portage_profile_dir="etc/portage/profile"
-dodir "${etc_portage_profile_dir}"
-insinto "${etc_portage_profile_dir}"
-doins make.defaults
+## make.default
+#etc_portage_profile_dir="etc/portage/profile"
+#dodir "${etc_portage_profile_dir}"
+#insinto "${etc_portage_profile_dir}"
+#doins make.defaults
 
 # locale
 dodir "etc"
