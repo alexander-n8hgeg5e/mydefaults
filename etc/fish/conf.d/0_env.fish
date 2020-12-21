@@ -39,20 +39,20 @@
             set -x  sets "$HOME"/code/portage/sets
 
             # pulseaudio
-            set -x  PULSEAUDIO_REMOTE_SOCKET_PREFIX  /tmp/pulseaudio
+           # set -x  PULSEAUDIO_REMOTE_SOCKET_PREFIX  /tmp/pulseaudio
 
-            if not set -q DEFAULT_PULSE_SERVER or test $DEFAULT_PULSE_SERVER = ""
-                if test -f "$EPREFIX"/etc/default/pulse_server
-                    set _DEFAULT_PULSE_SERVER  (cat "$EPREFIX"/etc/default/pulse_server)
-                    if test $_DEFAULT_PULSE_SERVER != ""
-                        set -x DEFAULT_PULSE_SERVER $_DEFAULT_PULSE_SERVER
-                    end
-                end
-            end
+           # if not set -q DEFAULT_PULSE_SERVER or test $DEFAULT_PULSE_SERVER = ""
+           #     if test -f "$EPREFIX"/etc/default/pulse_server
+           #         set _DEFAULT_PULSE_SERVER  (cat "$EPREFIX"/etc/default/pulse_server)
+           #         if test $_DEFAULT_PULSE_SERVER != ""
+           #             set -x DEFAULT_PULSE_SERVER $_DEFAULT_PULSE_SERVER
+           #         end
+           #     end
+           # end
 
-            if not set -q PULSE_SERVER or test $PULSE_SERVER = ""
-                set -x PULSE_SERVER "$DEFAULT_PULSE_SERVER"
-            end
+           # if not set -q PULSE_SERVER or test $PULSE_SERVER = ""
+           #     set -x PULSE_SERVER "$DEFAULT_PULSE_SERVER"
+           # end
             
             set -g  fish_key_bindings fish_default_key_bindings
             set -x  NMON Ukt3nv-.
