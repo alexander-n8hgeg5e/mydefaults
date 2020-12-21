@@ -1,6 +1,6 @@
 #!/bin/fish
 
-update_paenv
+#update_paenv
 env_set_from_config_file monitor_widths
 env_set_from_config_file screen_layout
 env_set_from_config_file screen_layout_v2
