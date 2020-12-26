@@ -65,14 +65,7 @@
             if set -q SSH_CONNECTION;and test -z $display_list[1]
                 set display_host_ip (string split " " "$SSH_CONNECTION")[1]
                 if test -n "$display_host_ip"
-                    if test -x (which dig 2>/dev/null)
-                        set display_host (string trim -r -c. (dig +short -x "$display_host_ip"))
-                        test -n "$display_host"
-                        or set display_host (string trim -r -c. (dig +short -x "$display_host_ip" @localhost))
-                    end
-                    test -n "$display_host"
-                    or set display_host "$display_host_ip"
-                    set -x DISPLAY "$display_host""$DISPLAY"
+                    set -x DISPLAY "$display_host_ip""$DISPLAY"
                 end
             end
 #########################################################################################
