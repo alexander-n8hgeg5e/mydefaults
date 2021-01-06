@@ -1,5 +1,0 @@
-# DO NOT EDIT IN "/etc" !
-# INSTEAD EDIT in "/var/src/mydefaults/etc/portage/package.accept_keywords/neovim" !
-app-editors/neovim::my ~amd64
-=dev-libs/libtermkey-0.22::gentoo ~amd64
-=dev-libs/unibilium-2.1.0::gentoo ~amd64

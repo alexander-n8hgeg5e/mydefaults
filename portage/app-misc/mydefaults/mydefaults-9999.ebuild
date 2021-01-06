@@ -60,17 +60,14 @@ dodir   "${etc_portage_pau_dir}"
 insinto "${etc_portage_pau_dir}"
 doins   "${etc_portage_pau_dir}/"*
 
-# mutt use flags
-etc_portage_pau_dir="etc/portage/package.use"
-dodir   "${etc_portage_pau_dir}"
-insinto "${etc_portage_pau_dir}"
-doins   "${etc_portage_pau_dir}/"*
 
-# keywords
-etc_portage_pak_dir="etc/portage/package.accept_keywords"
-dodir               "${etc_portage_pak_dir}"
-insinto             "${etc_portage_pak_dir}"
-doins               "${etc_portage_pak_dir}/"*
+# no more use flags here
+# -> moved to my profile
+
+
+# no more accept_keywords here
+# -> moved to my profile
+
 
 # mask
 etc_portage_mask_dir="etc/portage/package.mask"

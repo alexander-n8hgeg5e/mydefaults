@@ -1,3 +1,0 @@
-# DO NOT EDIT IN "/etc" !
-# INSTEAD EDIT in "/var/src/mydefaults/etc/portage/package.accept_keywords/columnize" !
-=dev-python/columnize-0.3.9 ~amd64
