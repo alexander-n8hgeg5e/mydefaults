@@ -1,3 +1,0 @@
-# DO NOT EDIT IN "/etc" !
-# INSTEAD EDIT in "/var/src/mydefaults/etc/portage/package.use/mutt" !
-mail-client/mutt -lmdb -qdbm -berkdb -hcache -imap -gdbm -nls
