@@ -1,1 +1,1 @@
-media-libs/mesa O2++.conf
+media-libs/mesa O3.conf distcc.conf ccache.conf

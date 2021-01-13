@@ -1,0 +1,4 @@
+cross-g++/binutils cross-g++/binutils.conf
+cross-g++/gcc cross-g++/gcc.conf
+cross-g++/newlib cross-g++/newlib.conf
+cross-g++/gdb cross-g++/gdb.conf
