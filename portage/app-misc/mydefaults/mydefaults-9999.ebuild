@@ -87,12 +87,6 @@ dodir               "${etc_portage_license_dir}"
 insinto             "${etc_portage_license_dir}"
 doins               "${etc_portage_license_dir}/"*
 
-# package.env
-etc_portage_penv_dir="etc/portage/package.env"
-dodir               "${etc_portage_penv_dir}"
-insinto             "${etc_portage_penv_dir}"
-doins               "${etc_portage_penv_dir}/"*
-
 # env
 etc_portage_env_dir="etc/portage/env"
 dodir               "${etc_portage_env_dir}"
