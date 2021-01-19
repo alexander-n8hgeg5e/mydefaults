@@ -45,13 +45,6 @@ set -x  MANPAGER w3m
 set -q CLIPBOARD_FILE; and test -n $CLIPBOARD_FILE; or set -x CLIPBOARD_FILE /tmp/sodufosuuu
 set -q CLIPBOARD_META_FILE; and test -n $CLIPBOARD_META_FILE; or set -x  CLIPBOARD_META_FILE /tmp/sodufosuu
 
-set display_list (string split ":" $DISPLAY)
-if set -q SSH_CONNECTION;and test -z $display_list[1]
-    set display_host_ip (string split " " "$SSH_CONNECTION")[1]
-    if test -n "$display_host_ip"
-        set -x DISPLAY "$display_host_ip""$DISPLAY"
-    end
-end
 #########################################################################################
 #######################  aliases  #######################################################
 #########################################################################################
