@@ -1,73 +1,73 @@
-#########################################################################################
-#######################  environment vars  ##############################################
-#########################################################################################
-            set -x hostnamE (hostname)
-            not contains $PATH "$HOME""/.bin" ;and set -x PATH "$HOME""/.bin" $PATH
-            for i in (cat "$EPREFIX"/etc/locale.conf);eval export $i;end
-            set -x co "$HOME"/.config
-            set -x cf "$HOME"/.config/fish/config.fish
-            set -x c  "$EPREFIX"/var/src
-            set -x cp  "$EPREFIX"/var/src/python_code
-            set -x cpl  "$EPREFIX"/var/src/pylib/pylib
-            set -x cv  "$HOME"/.config/nvim
-            set -x ecf "$EPREFIX"/etc/fish/config.fish
-            set -x ep "$EPREFIX"/etc/portage
-            set -x epp "$EPREFIX"/etc/portage/patches
-            set -x f "$HOME"/.config/fish/config.fish
-            set -x mc "$EPREFIX"/etc/portage/make.conf
-            set -x md  "$EPREFIX"/var/src/mydefaults
-            set -x ed  "$EPREFIX"/var/src/mydefaults/etc/fish/conf.d/0_env.fish
-            set -x mdf "$EPREFIX"/var/src/mydefaults/etc/fish/conf.d/0_mydefaults.fish
-            set -x mrc "$HOME"/.muttrc
-            set -x nc "$HOME"/.config/nvim
-            set -x pak "$EPREFIX"/etc/portage/package.accept_keywords
-			set -x pm  "$EPREFIX"/etc/portage/package.mask
-			set -x ppe "$EPREFIX"/etc/portage/package.env
-			set -x pe  "$EPREFIX"/etc/portage/env
-            set -x pu "$EPREFIX"/etc/portage/package.use
-            set -x s "$EPREFIX"/var/src/shortcuts
-            set -x w  "$EPREFIX"/var/lib/portage/world
-            set -x ws "$EPREFIX"/var/lib/portage/world_sets
-            set -x gh '.git/refs/heads'
-            set -x vd "$HOME""/.config/nvim"
-            set -x r "$EPREFIX"/var/src/portage
-            set -x p "$EPREFIX"/var/src/portage/profiles
+#############################################
+############  environment vars  #############
+#############################################
+set -x hostnamE (hostname)
+not contains $PATH "$HOME""/.bin" ;and set -x PATH "$HOME""/.bin" $PATH
+for i in (cat "$EPREFIX"/etc/locale.conf);eval export $i;end
+set -x co "$HOME"/.config
+set -x cf "$HOME"/.config/fish/config.fish
+set -x c  "$EPREFIX"/var/src
+set -x cp  "$EPREFIX"/var/src/python_code
+set -x cpl  "$EPREFIX"/var/src/pylib/pylib
+set -x cv  "$HOME"/.config/nvim
+set -x ecf "$EPREFIX"/etc/fish/config.fish
+set -x ep "$EPREFIX"/etc/portage
+set -x epp "$EPREFIX"/etc/portage/patches
+set -x f "$HOME"/.config/fish/config.fish
+set -x mc "$EPREFIX"/etc/portage/make.conf
+set -x md  "$EPREFIX"/var/src/mydefaults
+set -x ed  "$EPREFIX"/var/src/mydefaults/etc/fish/conf.d/0_env.fish
+set -x mdf "$EPREFIX"/var/src/mydefaults/etc/fish/conf.d/0_mydefaults.fish
+set -x mrc "$HOME"/.muttrc
+set -x nc "$HOME"/.config/nvim
+set -x pak "$EPREFIX"/etc/portage/package.accept_keywords
+set -x pm  "$EPREFIX"/etc/portage/package.mask
+set -x ppe "$EPREFIX"/etc/portage/package.env
+set -x pe  "$EPREFIX"/etc/portage/env
+set -x pu "$EPREFIX"/etc/portage/package.use
+set -x s "$EPREFIX"/var/src/shortcuts
+set -x w  "$EPREFIX"/var/lib/portage/world
+set -x ws "$EPREFIX"/var/lib/portage/world_sets
+set -x gh '.git/refs/heads'
+set -x vd "$HOME""/.config/nvim"
+set -x r "$EPREFIX"/var/src/portage
+set -x p "$EPREFIX"/var/src/portage/profiles
 
-            set -x  ebuild_edit_version 9999
-            set -x  EDITOR e
-            set -x  SUDO_EDITOR "$EPREFIX"/usr/bin/nvim
-            set -q  BROWSER ; or set -x BROWSER w3m
-            set -x  sets "$EPREFIX"/var/src/portage/sets
+set -x  ebuild_edit_version 9999
+set -x  EDITOR e
+set -x  SUDO_EDITOR "$EPREFIX"/usr/bin/nvim
+set -q  BROWSER ; or set -x BROWSER w3m
+set -x  sets "$EPREFIX"/var/src/portage/sets
 
-            # pulseaudio
-           # set -x  PULSEAUDIO_REMOTE_SOCKET_PREFIX  /tmp/pulseaudio
+ # pulseaudio
+# set -x  PULSEAUDIO_REMOTE_SOCKET_PREFIX  /tmp/pulseaudio
 
-           # if not set -q DEFAULT_PULSE_SERVER or test $DEFAULT_PULSE_SERVER = ""
-           #     if test -f "$EPREFIX"/etc/default/pulse_server
-           #         set _DEFAULT_PULSE_SERVER  (cat "$EPREFIX"/etc/default/pulse_server)
-           #         if test $_DEFAULT_PULSE_SERVER != ""
-           #             set -x DEFAULT_PULSE_SERVER $_DEFAULT_PULSE_SERVER
-           #         end
-           #     end
-           # end
+# if not set -q DEFAULT_PULSE_SERVER or test $DEFAULT_PULSE_SERVER = ""
+#     if test -f "$EPREFIX"/etc/default/pulse_server
+#         set _DEFAULT_PULSE_SERVER  (cat "$EPREFIX"/etc/default/pulse_server)
+#         if test $_DEFAULT_PULSE_SERVER != ""
+#             set -x DEFAULT_PULSE_SERVER $_DEFAULT_PULSE_SERVER
+#         end
+#     end
+# end
 
-           # if not set -q PULSE_SERVER or test $PULSE_SERVER = ""
-           #     set -x PULSE_SERVER "$DEFAULT_PULSE_SERVER"
-           # end
-            
-            set -g  fish_key_bindings fish_default_key_bindings
-            set -x  NMON Ukt3nv-.
-            set -x  MANPAGER w3m
-            set -q CLIPBOARD_FILE; and test -n $CLIPBOARD_FILE; or set -x CLIPBOARD_FILE /tmp/sodufosuuu
-            set -q CLIPBOARD_META_FILE; and test -n $CLIPBOARD_META_FILE; or set -x  CLIPBOARD_META_FILE /tmp/sodufosuu
+# if not set -q PULSE_SERVER or test $PULSE_SERVER = ""
+#     set -x PULSE_SERVER "$DEFAULT_PULSE_SERVER"
+# end
+ 
+ set -g  fish_key_bindings fish_default_key_bindings
+ set -x  NMON Ukt3nv-.
+ set -x  MANPAGER w3m
+ set -q CLIPBOARD_FILE; and test -n $CLIPBOARD_FILE; or set -x CLIPBOARD_FILE /tmp/sodufosuuu
+ set -q CLIPBOARD_META_FILE; and test -n $CLIPBOARD_META_FILE; or set -x  CLIPBOARD_META_FILE /tmp/sodufosuu
 
-            set display_list (string split ":" $DISPLAY)
-            if set -q SSH_CONNECTION;and test -z $display_list[1]
-                set display_host_ip (string split " " "$SSH_CONNECTION")[1]
-                if test -n "$display_host_ip"
-                    set -x DISPLAY "$display_host_ip""$DISPLAY"
-                end
-            end
+ set display_list (string split ":" $DISPLAY)
+ if set -q SSH_CONNECTION;and test -z $display_list[1]
+     set display_host_ip (string split " " "$SSH_CONNECTION")[1]
+     if test -n "$display_host_ip"
+         set -x DISPLAY "$display_host_ip""$DISPLAY"
+     end
+ end
 #########################################################################################
 #######################  aliases  #######################################################
 #########################################################################################
