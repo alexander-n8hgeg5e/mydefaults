@@ -4,3 +4,4 @@ if not test -e /usr/lib64/libswmhack.so
     end
 end
 
+# vim: set syntax=sh :
