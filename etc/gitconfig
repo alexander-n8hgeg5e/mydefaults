@@ -1,19 +1,22 @@
 [user]
         email = alexander.w.email@gmail.com
         name = alexander-n8hgeg5e
+
 [core]
         compression = 0
         looseCompression = 0
         quotepath = off
-	    hookspath = ${EPREFIX}/etc/git_hooks
-	    deltaBaseCacheLimit = 1g
-	conflictStyle = diff3
-	        pager = cat
+        hookspath = ${EPREFIX}/etc/git_hooks
+        deltaBaseCacheLimit = 1g
+        conflictStyle = diff3
+        pager = cat
         excludesFile = "~/.gitignore_global"
-	preferSymlinkRefs = true
+        preferSymlinkRefs = true
+
 [gui]
         fontui = -family \"DejaVu Sans\" -size 8 -weight normal -slant roman -underline 0 -overstrike 0
         fontdiff = -family \"DejaVu Sans Mono\" -size 8 -weight normal -slant roman -underline 0 -overstrike 0
+
 [http]
         cookiefile = "~/.gitcookies"
 [push]
@@ -21,49 +24,53 @@
         recurseSubmodules = on-demand
 
 [status]
-	submodulesummary = true
-	showUntrackedFiles = normal
+    submodulesummary = true
+    showUntrackedFiles = normal
+
 [diff]
     colorMoved = dimmed_zebra
     algorithm = histogram
     indentHeuristic = true
-	submodule = diff
+    submodule = diff
     ignoreSubmodules = none
-	renameLimit = 1000000
+    renameLimit = 1000000
 
 [commit]
         status = true
         verbose = true
+
 [receive]
         denyCurrentBranch = updateInstead
 [advice]
         statushints = false
         pushUpdateRejected = false
+
 [merge]
         stat = true
-	renamelimit = 1000000
+    renamelimit = 1000000
 [grep]
         threads = 16
 [pack]
         threads = 16
-        deltaCacheSize = 4000
-        windowMemory = 500m
-        deltaCacheLimit = 6000
-	    compression = 0
-	    writeBitmapHashCache = true
-	packSizeLimit = 1M
-	writeBitmapHashCache = true
-	depth = 500
-	window = 100
+        deltaCacheSize = 0
+        deltaCacheLimit = 65535
+        compression = 0
+        # writeBitmapHashCache = true
+        # packSizeLimit = unlimited
+        writeBitmapHashCache = true
+        depth = 500
+        window = 100
+
 [branch]
         autoSetupMerge = always
 [format]
-	pretty = "format:%C(red)%h %C(green)%ad%Creset %C(auto)%d%Creset %n%B%n"
+    pretty = "format:%C(red)%h %C(green)%ad%Creset %C(auto)%d%Creset %n%B%n"
+
 [interactive]
         singleKey = true
 [color]
-	interactive = true
-	pager = true
+    interactive = true
+    pager = true
 
 [color "branch"]
         remote = cyan
@@ -74,16 +81,20 @@
 
 [gc]
     reflogExpire = never
-	reflogExpireUnreachable = never
-    auto = 0
+    reflogExpireUnreachable = never
+    auto = 500
     packRefs = false
     rerereResolved = 1000d
     rerereUnresolved = 250d
+    aggressiveDepth = 1000
+    aggressiveWindow = 500
 
 [rerere]
     autoUpdate = true
     enabled = true
 
 [transfer]
-	fsckobjects = false
-	unpacklimit = 500m
+    fsckobjects = true
+    #unpacklimit = 100
+
+# vim: set filetype=config :
