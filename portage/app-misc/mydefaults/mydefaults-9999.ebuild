@@ -54,6 +54,12 @@ dodir "${etc_fish_confd_dir}"
 insinto "${etc_fish_confd_dir}"
 doins   "${etc_fish_confd_dir}/"*
 
+# bash default conf
+etc_bash_confd_dir="etc/bash/bashrc.d"
+dodir "${etc_bash_confd_dir}"
+insinto "${etc_bash_confd_dir}"
+doins   "${etc_bash_confd_dir}/"*
+
 # etc/vim
 etc_portage_pau_dir="etc/vim"
 dodir   "${etc_portage_pau_dir}"
