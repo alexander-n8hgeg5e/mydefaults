@@ -48,8 +48,8 @@ if ! use prefix ; then
 	doins   "${etc_portage_repos_conf_dir}/"*
 fi
 
-# shortcuts-env
-etc_envd_dir="etc/env.d/shortcuts"
+# env.d
+etc_envd_dir="etc/env.d"
 dodir "${etc_envd_dir}"
 insinto "${etc_envd_dir}"
 doins   "${etc_envd_dir}/"*
