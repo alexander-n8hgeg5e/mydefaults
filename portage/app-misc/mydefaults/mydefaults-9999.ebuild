@@ -48,6 +48,12 @@ if ! use prefix ; then
 	doins   "${etc_portage_repos_conf_dir}/"*
 fi
 
+# shortcuts-env
+etc_envd_dir="etc/env.d/shortcuts"
+dodir "${etc_envd_dir}"
+insinto "${etc_envd_dir}"
+doins   "${etc_envd_dir}/"*
+
 # fish default conf
 etc_fish_confd_dir="etc/fish/conf.d"
 dodir "${etc_fish_confd_dir}"
