@@ -1,3 +1,5 @@
-# DO NOT EDIT IN "/etc" !
+#DO NOT EDIT IN "/etc" !
 # INSTEAD EDIT in "/var/src/mydefaults/etc/portage/package.mask/use_my_repo" !
 =app-editors/neovim-9999:0/0::gentoo
+
+<=dev-python/ipython-7.20.0::gentoo
