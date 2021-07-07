@@ -1,5 +1,4 @@
 export SHORTCUTS_LOADED=1
-export hostnamE=(hostname)
 export co="$HOME"/.config
 export cf="$HOME"/.config/fish/config.fish
 export c="$EPREFIX"/var/src
