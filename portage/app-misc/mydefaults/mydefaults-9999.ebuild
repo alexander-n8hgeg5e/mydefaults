@@ -39,6 +39,7 @@ doins "etc/locale.conf"
 doins "etc/locale.gen"
 doins "etc/resolvconf.conf"
 doins "etc/gitconfig"
+doins "etc/git-mailmap"
 
 # repos.conf
 if ! use prefix ; then

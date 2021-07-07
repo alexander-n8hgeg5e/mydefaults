@@ -1,6 +1,8 @@
 [user]
         email = alexander.w.email@gmail.com
         name = alexander-n8hgeg5e
+[mailmap]
+		file = /etc/git-mailmap
 
 [core]
         compression = 0
