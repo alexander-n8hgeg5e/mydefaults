@@ -1,0 +1,4 @@
+# eix color setup
+export COLORSCHEME0=0
+export TERM_ALT1=tmux-256color
+export COLORSCHEME1=0
