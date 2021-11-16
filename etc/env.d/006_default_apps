@@ -1,0 +1,2 @@
+export EDITOR="e -g"
+export GIT_EDITOR="e -gw"

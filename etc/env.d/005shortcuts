@@ -28,7 +28,6 @@ export vd="$HOME""/.config/nvim"
 export r="$EPREFIX"/var/src/portage
 export p="$EPREFIX"/var/src/portage/profiles
 export ebuild_edit_version=9999
-export EDITOR=e
 export SUDO_EDITOR="$EPREFIX"/usr/bin/nvim
 export sets="$EPREFIX"/var/src/portage/sets
 export NMON=Ukt3nv-.
