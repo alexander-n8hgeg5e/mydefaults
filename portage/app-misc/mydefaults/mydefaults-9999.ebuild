@@ -15,6 +15,7 @@ IUSE="debug prefix"
 
 DEPEND="app-misc/shortcuts"
 RDEPEND="${DEPEND}"
+BDEPEND="sys-apps/portage[${PYTHON_USEDEP}]"
 
 src_prepare(){
 	if use debug;then
