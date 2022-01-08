@@ -49,6 +49,12 @@ if ! use prefix ; then
 	doins   "${etc_portage_repos_conf_dir}/"*
 fi
 
+# /etc/profile.d
+etc_profiled_dir="etc/profile.d"
+dodir "${etc_profiled_dir}"
+insinto "${etc_profiled_dir}"
+doins   "${etc_profiled_dir}/"*
+
 # env.d
 etc_envd_dir="etc/env.d"
 dodir "${etc_envd_dir}"
