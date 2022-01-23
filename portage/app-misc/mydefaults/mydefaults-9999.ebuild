@@ -3,7 +3,9 @@
 
 EAPI=6
 EGIT_REPO_URI="${CODEDIR}""/${PN}"
-inherit git-r3
+
+PYTHON_COMPAT=( python3_{6,7,8,9,10} )
+inherit git-r3 python-r1
 
 DESCRIPTION=""
 HOMEPAGE=""
@@ -13,7 +15,7 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE="debug prefix"
 
-DEPEND="app-misc/shortcuts"
+DEPEND="app-misc/shortcuts[${PYTHON_USEDEP}]"
 RDEPEND="${DEPEND}"
 BDEPEND="sys-apps/portage[${PYTHON_USEDEP}]"
 
