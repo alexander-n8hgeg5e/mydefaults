@@ -32,6 +32,7 @@ export pg="$EPREFIX"/var/db/repos/gentoo/profiles
 export pb="$EPREFIX"/var/src/portage/profiles/base
 export pbmd="$EPREFIX"/var/src/portage/profiles/base/make.defaults
 export mdes="$EPREFIX"/var/src/mydefaults/etc/env.d/005shortcuts
+export h=HEAD
 export ebuild_edit_version=9999
 export SUDO_EDITOR="$EPREFIX"/usr/bin/nvim
 export sets="$EPREFIX"/var/src/portage/sets
