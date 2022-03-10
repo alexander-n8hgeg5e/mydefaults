@@ -69,6 +69,80 @@ Host ec
 Hostname esadc
 CanonicalizeHostname no
 
+Host wb-i
+Hostname wb
+User root
+IdentityFile ~/.ssh/id_rsa_8192
+ControlPersist no
+ControlMaster no
+ControlMaster auto
+ServerAliveInterval 1
+ServerAliveCountMax 1
+RequestTTY force
+RemoteCommand env PATH=/usr/bin:/usr/sbin:/bin:/sbin d
+port 5000
+
+Host ac-i
+Hostname ac
+User root
+IdentityFile ~/.ssh/id_rsa_8192
+ControlPersist no
+ControlMaster no
+ControlMaster auto
+ServerAliveInterval 1
+ServerAliveCountMax 1
+RequestTTY force
+RemoteCommand env PATH=/usr/bin:/usr/sbin:/bin:/sbin /d
+port 5000
+
+Host fb-i
+Hostname fb
+User root
+IdentityFile ~/.ssh/id_rsa_16384
+ControlPersist no
+ControlMaster no
+ControlMaster auto
+ServerAliveInterval 1
+ServerAliveCountMax 1
+RequestTTY force
+#RemoteCommand env PATH=/usr/bin:/usr/sbin:/bin:/sbin d
+port 5000
+
+Host nb-i
+Hostname nb
+User root
+IdentityFile ~/.ssh/id_rsa_8192
+ControlPersist no
+ControlMaster no
+ControlMaster auto
+ServerAliveInterval 1
+ServerAliveCountMax 1
+RequestTTY force
+#RemoteCommand env PATH=/usr/bin:/usr/sbin:/bin:/sbin d
+port 5000
+
+Host dc-i
+Hostname dc
+User root
+IdentityFile ~/.ssh/id_rsa_8192
+ControlPersist no
+ControlMaster no
+ControlMaster auto
+ServerAliveInterval 1
+ServerAliveCountMax 1
+RequestTTY force
+#RemoteCommand env PATH=/usr/bin:/usr/sbin:/bin:/sbin d
+port 5000
+
+Host l6-i
+Hostname l6
+User root
+IdentityFile ~/.ssh/id_rsa_8192
+ControlPersist no
+ControlMaster no
+ControlMaster auto
+port 5000
+
 
 #Host tmrlfs
 #Hostname tmrl
