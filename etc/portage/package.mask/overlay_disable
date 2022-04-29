@@ -1,8 +1,0 @@
-# DO NOT EDIT IN "/etc" !
-# INSTEAD EDIT in "/var/src/mydefaults/etc/portage/package.mask/overlay_disable" !
-*/*::sage-on-gentoo
-*/*::fordfrog
-*/*::java
-#*/*::qt
-*/*::sage-on-gentoo
-*/*::science

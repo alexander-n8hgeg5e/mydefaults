@@ -1,3 +1,0 @@
-# DO NOT EDIT IN "/etc" !
-# INSTEAD EDIT in "/var/src/mydefaults/etc/portage/package.mask/old_is_better" !
-=x11-misc/synergy-2*

@@ -1,7 +1,0 @@
-# DO NOT EDIT IN "/etc" !
-# INSTEAD EDIT in "/var/src/mydefaults/etc/portage/package.mask/build_fails" !
-#dev-qt/qtwebkit
-app-vim/gtk-syntax
-dev-embedded/crosstool-NG-xtensa::my
-=dev-python/matplotlib-2.2.2-r1::gentoo
-=dev-python/matplotlib-2.2.4::gentoo
