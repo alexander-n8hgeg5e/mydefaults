@@ -143,6 +143,19 @@ ControlMaster no
 ControlMaster auto
 port 5000
 
+Host sk-i
+Hostname skyscraper
+User root
+IdentityFile ~/.ssh/id_rsa_16384
+ControlPersist no
+ControlMaster no
+ControlMaster auto
+ServerAliveInterval 1
+ServerAliveCountMax 1
+RequestTTY force
+#RemoteCommand env PATH=/usr/bin:/usr/sbin:/bin:/sbin d
+port 5000
+
 
 #Host tmrlfs
 #Hostname tmrl
