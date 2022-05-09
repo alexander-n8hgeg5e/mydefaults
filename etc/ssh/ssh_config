@@ -98,7 +98,7 @@ port 5000
 Host fb-i
 Hostname fb
 User root
-IdentityFile ~/.ssh/id_rsa_16384
+IdentityFile ~/.ssh/id_rsa_8192
 ControlPersist no
 ControlMaster no
 ControlMaster auto
@@ -146,7 +146,7 @@ port 5000
 Host sk-i
 Hostname skyscraper
 User root
-IdentityFile ~/.ssh/id_rsa_16384
+IdentityFile ~/.ssh/id_rsa_8192
 ControlPersist no
 ControlMaster no
 ControlMaster auto
