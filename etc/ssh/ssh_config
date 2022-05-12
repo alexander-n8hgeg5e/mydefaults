@@ -105,7 +105,7 @@ ControlMaster auto
 ServerAliveInterval 1
 ServerAliveCountMax 1
 RequestTTY force
-#RemoteCommand env PATH=/usr/bin:/usr/sbin:/bin:/sbin d
+RemoteCommand /d
 port 5000
 
 Host nb-i
