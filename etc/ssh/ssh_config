@@ -156,6 +156,18 @@ RequestTTY force
 RemoteCommand /d
 port 5000
 
+Host ec-i
+Hostname esadc
+User root
+IdentityFile ~/.ssh/id_rsa_8192
+ControlPersist no
+ControlMaster no
+ControlMaster auto
+ServerAliveInterval 1
+ServerAliveCountMax 1
+RequestTTY force
+RemoteCommand /d
+port 5000
 
 #Host tmrlfs
 #Hostname tmrl
