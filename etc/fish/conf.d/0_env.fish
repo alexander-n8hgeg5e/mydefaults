@@ -34,7 +34,7 @@ set -x r "$EPREFIX"/var/src/portage
 set -x p "$EPREFIX"/var/src/portage/profiles
 
 set -x  ebuild_edit_version 9999
-set -x  EDITOR e
+set -x  EDITOR "e -gw"
 set -x  SUDO_EDITOR "$EPREFIX"/usr/bin/nvim
 set -q  BROWSER ; or set -x BROWSER w3m
 set -x  sets "$EPREFIX"/var/src/portage/sets
