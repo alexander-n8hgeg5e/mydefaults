@@ -93,5 +93,6 @@ export fish_pager_color_progress=white\x1e\x2d\x2dbackground\x3dcyan
 export slc=/node/ec/etc/syslog.conf
 export n=/node
 export pmd=/var/src/portage/profiles/base/make.defaults
+export pmc=/var/src/portage/profiles/base/make.defaults
 export h=HEAD
 # vim: set ft=gentoo-env-d : 
