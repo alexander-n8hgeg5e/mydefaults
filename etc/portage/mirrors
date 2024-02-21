@@ -1,0 +1,1 @@
+local ssh://distfilesync@tc/var/gentoo-mirror ssh://distfilesync@de/var/gentoo-mirror
