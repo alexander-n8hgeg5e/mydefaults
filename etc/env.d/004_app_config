@@ -5,3 +5,7 @@ export COLORSCHEME1=0
 
 # pager setup
 export PAGER=pager
+
+# qt
+export QT_QPA_PLATFORMTHEME=qt5ct
+export GTK_THEME=Adwaita-dark
